@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-front-end-flex</title>
+</head>
+<style>
+    [class*='flex-item'] {
+            width: 100%;
+            outline-color: indianred;
+            outline-width: 1px;
+            outline-style: solid;
+            font-size: 35px;
+        }
+    .raudona {
+        background-color: red;
+    }
+    .zydra {
+        background-color: royalblue;
+    }
+    .zalia {
+        background-color: green;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flex-item-1 {
+        width: 100%;
+    }
+    .flex-item-2, .flex-item-3 {
+        width: 50%;
+    }
+    .flex-item-4 {
+        width: 70%;
+    }
+    .flex-item-5 {
+        width: 30%;
+    }
+    .flex-item-6, .flex-item-7, .flex-item-8 {
+        width: 33.33%;
+    }
+    .flex-item-1 {
+        order: 1;
+    }
+    .flex-item-2 {
+        order: 2;
+    }
+    .flex-item-3 {
+        order: 3;
+    }
+    .flex-item-4 {
+        order: 4;
+    }
+    .flex-item-5 {
+        order: 5;
+    }
+    .flex-item-6 {
+        order: 6;
+    }
+    .flex-item-7 {
+        order: 7;
+    }
+    .flex-item-8 {
+        order: 8;
+    }
+
+    @media screen and (max-width: 720px) {
+        .flex-container {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        [class*='flex-item'] {
+            width: 100%;
+            outline-color: darkcyan;
+            outline-width: 1px;
+            outline-style: solid;
+            font-size: 20px;
+        }
+    }
+</style>
+<body>
+    <div class='flex-container'>
+        <div class='flex-item-1 zydra'>1tekstas </div>
+        <div class='flex-item-2 raudona'>2tekstas </div>
+        <div class='flex-item-3 zalia'>3tekstas </div>
+        <div class='flex-item-4'>4tekstas </div>
+        <div class='flex-item-5'>5tekstas </div>
+        <div class='flex-item-6'>6tekstas </div>
+        <div class='flex-item-7'>7tekstas </div>
+        <div class='flex-item-8'>8tekstas </div>
+        <!-- <div class='flex-item-9'>tekstas </div>
+        <div class='flex-item-10'>tekstas </div>
+        <div class='flex-item-11'>tekstas </div>
+        <div class='flex-item-12'>tekstas </div>
+        <div class='flex-item-13'>tekstas </div>
+        <div class='flex-item-14'>tekstas </div>
+        <div class='flex-item-15'>tekstas </div>
+        <div class='flex-item-16'>tekstas </div>
+        <div class='flex-item-17'>tekstas </div>
+        <div class='flex-item-18'>tekstas </div>
+        <div class='flex-item-19'>tekstas </div>
+        <div class='flex-item-20'>tekstas </div> -->
+    </div>
+</body>
+</html>
