@@ -13,6 +13,9 @@
             outline-width: 1px;
             outline-style: solid;
             font-size: 35px;
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
         }
     .raudona {
         background-color: red;
@@ -43,7 +46,7 @@
     .flex-item-6, .flex-item-7, .flex-item-8 {
         width: 33.33%;
     }
-    .flex-item-1 {
+    /* .flex-item-1 {
         order: 1;
     }
     .flex-item-2 {
@@ -66,8 +69,13 @@
     }
     .flex-item-8 {
         order: 8;
+    } */
+    .kvadratas {
+        width: 50px;
+        height: 50px;
+        background-color: darkgoldenrod;
+        margin: 5px;
     }
-
     @media screen and (max-width: 720px) {
         .flex-container {
             flex-direction: column;
@@ -79,12 +87,18 @@
             outline-width: 1px;
             outline-style: solid;
             font-size: 20px;
+            align-items: center;
         }
     }
 </style>
 <body>
     <div class='flex-container'>
-        <div class='flex-item-1 zydra'>1tekstas </div>
+        <div class='flex-item-1 zydra'>
+            <div class='flex-container'> 1tekstas
+                <div class='kvadratas'>1</div>
+                <div class='kvadratas'>1</div>
+            </div> 
+        </div>
         <div class='flex-item-2 raudona'>2tekstas </div>
         <div class='flex-item-3 zalia'>3tekstas </div>
         <div class='flex-item-4'>4tekstas </div>
@@ -92,6 +106,7 @@
         <div class='flex-item-6'>6tekstas </div>
         <div class='flex-item-7'>7tekstas </div>
         <div class='flex-item-8'>8tekstas </div>
+        
         <!-- <div class='flex-item-9'>tekstas </div>
         <div class='flex-item-10'>tekstas </div>
         <div class='flex-item-11'>tekstas </div>
